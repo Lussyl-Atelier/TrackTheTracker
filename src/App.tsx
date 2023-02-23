@@ -8,10 +8,14 @@ function App() {
 
   return (
 
-   <div className="app">
-      <Sidebar />
-      <main className="content">
+    <>
+      <div className="app">
+        
+        <Sidebar />
         <Topbar />
+      
+      <main className="content">
+
         <Routes>
           <Route path="/" element={<Dashboard />} />
         </Routes>
@@ -20,8 +24,8 @@ function App() {
         Simple React Typescript Tailwind Sample
       </h1>
     </div>
-
-  );
+ </>
+  )
 }
 
 export default App;
